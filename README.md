@@ -34,10 +34,16 @@ Creating Maven projects is based on the concept of an archetype. Think of an arc
 > * Create the folders `src/main/resources` and `src/test/resources`
 
 ## POM file 
-POM stands for Project Object Model And this file represents a one stop configuration for the entire project. Open 
+POM stands for Project Object Model And this file represents a one stop configuration for the entire project. Open the file to answer the next questions.
 
 > **Task:**
 >
 > * What do means the word SNAPSHOT in the version value?
+> * What is the purpose of the packing tag into the POM file?
+> * What is the purpose of the dependencies and dependency tags into the POM file?
+
+## Dependency Management
+
+A dependency is a Java library that this project depends on. While developing Java applications, you'll almost always be using other developers libraries, in addition to your own. So if you want to use code that isn't a part of the Java core library, you'll need to add that library as a dependency. Dependencies and Maven are declared inside this dependencies element. With each dependency represented by its own dependency element. Naming follows the GAV convention which stands for Group Artifact and Version.
 
 

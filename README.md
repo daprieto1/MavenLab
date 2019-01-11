@@ -53,15 +53,36 @@ The multiple dependencies that could be added into the project using Maven could
 > * Go to the MVNRepository and search for `tika-core` library. Add a new dependency to the POM file with the last version of this library.
 > * Replace the App class in the source folder with the App class provided in the laboratory.
 > * What is the functionality of this class?
+> * Add the next XML code to the POM file.
+
+```
+ <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+This XML in here which indicated both the version of our source code as well as the version of our compiled code that we would like when we compile this code and said source 1.8 target 1.8. Therefore, we can accommodate lambdas.
 
 ## Building Lifecycles and Plugins
 
 Maven is based on the idea of a build lifecycle which refers to the process of assembling and distributing an artifact like a JAR file. Maven ships with three lifecycles and you can think of them in terms of distributing an application.
 
+Now within lifecycle, there are phases. For examples, some of the phases that make up the default build lifecycle are the `compile`, `test`, `package`, and `install` phases.
+
 > **Task:**
 >
 > * The three principal Maven lifecycles are `clean`, `default` and `site`. Describe each one.
+> * Using the terminal execute the command `mvn compile`. Take the output screenshot. What is this command using for? What are transitive dependencies?
+> * Using the terminal execute the command `mvn package`. Take the output screenshot. What is this command using for?
 
-Now within lifecycle, there are phases. For examples, some of the phases that make up the default build lifecycle are the `compile`, `test`, `package`, and `install` phases.
 
 

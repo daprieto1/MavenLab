@@ -46,4 +46,22 @@ POM stands for Project Object Model And this file represents a one stop configur
 
 A dependency is a Java library that this project depends on. While developing Java applications, you'll almost always be using other developers libraries, in addition to your own. So if you want to use code that isn't a part of the Java core library, you'll need to add that library as a dependency. Dependencies and Maven are declared inside this dependencies element. With each dependency represented by its own dependency element. Naming follows the GAV convention which stands for Group Artifact and Version.
 
+The multiple dependencies that could be added into the project using Maven could be consulted in the MVNRepository https://mvnrepository.com/.
+
+> **Task:**
+>
+> * Go to the MVNRepository and search for `tika-core` library. Add a new dependency to the POM file with the last version of this library.
+> * Replace the App class in the source folder with the App class provided in the laboratory.
+> * What is the functionality of this class?
+
+## Building Lifecycles and Plugins
+
+Maven is based on the idea of a build lifecycle which refers to the process of assembling and distributing an artifact like a JAR file. Maven ships with three lifecycles and you can think of them in terms of distributing an application.
+
+> **Task:**
+>
+> * The three principal Maven lifecycles are `clean`, `default` and `site`. Describe each one.
+
+Now within lifecycle, there are phases. For examples, some of the phases that make up the default build lifecycle are the `compile`, `test`, `package`, and `install` phases.
+
 

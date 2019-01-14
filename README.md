@@ -83,6 +83,8 @@ Now within lifecycle, there are phases. For examples, some of the phases that ma
 > * The three principal Maven lifecycles are `clean`, `default` and `site`. Describe each one.
 > * Using the terminal execute the command `mvn compile`. Take the output screenshot. What is this command using for? What are transitive dependencies?
 > * Using the terminal execute the command `mvn package`. Take the output screenshot. What is this command using for?
+> * Using the terminal execute the command `mvn install`. Take the output screenshot. What is this command using for?
+> * Generate a new maven project in other folder using the maven command line tools, this project should has as groupId "edu.eci" and as artifactId "another-maven-project". Take the output screenshot.
 
 
 

@@ -85,6 +85,30 @@ Now within lifecycle, there are phases. For examples, some of the phases that ma
 > * Using the terminal execute the command `mvn package`. Take the output screenshot. What is this command using for?
 > * Using the terminal execute the command `mvn install`. Take the output screenshot. What is this command using for?
 > * Generate a new maven project in other folder using the maven command line tools, this project should has as groupId "edu.eci" and as artifactId "another-maven-project". Take the output screenshot.
+> * Replace the code of the App.java class with the following code and do all the neccesary steps to compile the code.
+
+```
+package edu.eci;
+
+import edu.eci.FileSpy;
+
+public class App 
+{
+    public static void main( String[] args )throws Exception
+    {
+        FileSpy.main(args);
+    }
+}
+```
+
+All the commands showed here such as mvn compile, mvn install, mvn package, they all come from plugins. And even if you didn't have to explicitly add a plugin to your pom file, a Maven plugin provides developers a way to attach their own tasks called goals to phases. So we have lifecycles, phases, and goals putting it all together, here's how they're related.
+
+Each Maven builds lifecycle such as the default lifecycle has specific phases associated with it. Think of these phases as categories of tasks that need to be performed. We've talked about some of these already such as compile, test, and package. Now at these phases are like categories of tasks, the actual tasks in Maven are called goals, these goals are provided by plugins. In other words, plugins bind goals to phases. These specific plugins are shipped with Maven but you can also use third party plugins and even develop your own. Speaking of plugins and goals, let's run a goal from the exact plugin short for execute.
+
+> **Task**
+>
+> * Use the following command to execute the file-spy application `mvn exec:java -Dexec.mainClass="edu.eci.FileSpy"`. Take the output screenshot.
+> * But this time you should knew that the application detect events in a folder when you add new files and print on the screen all the files with the text/csv extension. Test the application using the examples files. Take the output screenshot.
 
 
 
